@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<!--
+	Radius by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Detail 1 - Radius by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="preview">
+				<div class="inner">
+					<div class="content">
+						<h1>Radius</h1>
+						<h2>A fully responsive masonry style portfolio template.</h2>
+					</div>
+					<a href="index.html" class="button hidden"><span>Let's Go</span></a>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="preview">
+				<div class="inner">
+					<div class="image fit">
+						<img id="loadimg" src="images/pic05.jpg" alt="" />
+					</div>
+					<div class="content">
+						<header>
+							<h2>Happy Birth Day....My love</h2>
+						</header>
+						My love, if I could give you one thing in life, it would be the ability to see yourself in my eyes. That way, you will realize how much you mean to me. Happy Birthday
+						
+						There is no need for a special day to remind me how special you are for the stars always shine whenever you are near me. Have A Wonderful Birthday!
+						
+						The candles are lit and the music starts playing. I will now hold you in my arms so we can dance and I can whisper the words, “I love you my darling!” Wonderful Birthday!
+						
+						Thinking of you with great love on your special day and I wish you all the best that life can bring. I love you, sweetie! Best bday!
+						
+						With each birthday you have, I love you more and more. Happy Bday!
+						
+						Every time you hold my hand, even the worst days will become so easy. When you smile at me, the darkest thoughts will just fade away. Best Birthday, my love, without you, my life would be empty.
+						
+						Happy birthday to the love of my life! You deserve all the best that life could bring. I wish you happiness, success and good health! I love you!	</div>
+				</div>
+				<a href="#" id="left" class="nav previous"><span class="fa fa-chevron-left"></span></a>
+				<a href="#" id="right" class="nav next"><span class="fa fa-chevron-right"></span></a>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<a href="#" class="info fa fa-info-circle"><span>About</span></a>
+				<div class="inner">
+					<div class="content">
+						<h3>Happy Birth Day....My love</h3>
+					
+						My love, if I could give you one thing in life, it would be the ability to see yourself in my eyes. That way, you will realize how much you mean to me. Happy Birthday
+						
+						There is no need for a special day to remind me how special you are for the stars always shine whenever you are near me. Have A Wonderful Birthday!
+						
+						The candles are lit and the music starts playing. I will now hold you in my arms so we can dance and I can whisper the words, “I love you my darling!” Wonderful Birthday!
+						
+						Thinking of you with great love on your special day and I wish you all the best that life can bring. I love you, sweetie! Best bday!
+						
+						With each birthday you have, I love you more and more. Happy Bday!
+						
+						Every time you hold my hand, even the worst days will become so easy. When you smile at me, the darkest thoughts will just fade away. Best Birthday, my love, without you, my life would be empty.
+						
+						Happy birthday to the love of my life! You deserve all the best that life could bring. I wish you happiness, success and good health! I love you!
+					
+					</div>
+					<div class="copyright">
+						<h3>Follow me</h3>
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						</ul>
+						&copy; Dholbaaje.com.
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+			function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+var id = getParameterByName('id');
+
+id=parseInt(id);
+
+function get2D( num ) {
+    if( num.toString().length < 2 ) // Integer of less than two digits
+        return "0" + num; // Prepend a zero!
+    return num.toString(); // return string for consistency
+}
+var src="images/pic"+get2D(id)+".jpg";
+$("#loadimg").attr("src",src);
+
+$('#left').on({
+				'click': function(e){
+
+
+
+
+if(id==0){
+	id=23;
+
+}else{
+	id=id-1;
+}
+
+var src="images/pic"+get2D(id)+".jpg";
+$("#loadimg").attr("src",src);
+				}});
+
+				$('#right').on({
+				'click': function(e){
+
+
+
+
+if(id==23){
+	id=0;
+
+}else{
+
+	id=id+1;
+
+}
+
+var src="images/pic"+get2D(id)+".jpg";
+$("#loadimg").attr("src",src);
+				}});
+
+
+			</script>
+
+	</body>
+</html>
